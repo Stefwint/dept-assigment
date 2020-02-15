@@ -1,0 +1,71 @@
+{
+  "name": "clients",
+  "title": "CLIENTS",
+  "description": "We value a great working relationship with our clients above all else. It’s why they often come to our parties. It’s also why we’re able to challenge and inspire them to reach for the stars.",
+  "logos": [
+    {
+      "logo": "nivea.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "mona.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "transavia.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "zalando.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "tomtom.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "unilever.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "adidas.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "pathe.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "abn.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "triumph.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "microsoft.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "oxxio.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "nn.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "ziggo.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "walibi.svg",
+      "link": "https://www.deptagency.com"
+    },
+    {
+      "logo": "klm.svg",
+      "link": "https://www.deptagency.com"
+    }
+  ]
+}

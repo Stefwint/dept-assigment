@@ -1,0 +1,145 @@
+{
+  "layouts": [
+    {
+      "name": "tiles",
+      "items": [
+        {
+          "client": "bol.com",
+          "title": "A summer island in the Netherlands",
+          "link": "https://www.deptagency.com",
+          "image": "bolcom.png"
+        },
+        {
+          "client": "Kempen",
+          "title": "Not some average banking website",
+          "link": "https://www.deptagency.com",
+          "image": "kempen.png"
+        },
+        {
+          "client": "Philips",
+          "title": "Beautiful design meets innovative technology",
+          "link": "https://www.deptagency.com",
+          "image": "philips.png"
+        },
+        {
+          "client": "Gemeentemuseum",
+          "title": "A 100 years of Mondriaan & De Stijl",
+          "link": "https://www.deptagency.com",
+          "image": "gemeentemuseum.png"
+        }
+      ]
+    },
+    {
+      "name": "tilesFeatured",
+      "items": [
+        {
+          "client": "Florensis",
+          "title": "Rethinking the entire online ecosystem",
+          "link": "https://www.deptagency.com",
+          "image": "florensis.png"
+        },
+        {
+          "client": "Microsoft",
+          "title": "Topping into Ireland's unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+          "link": "https://www.deptagency.com"
+        },
+        {
+          "client": "O'neill",
+          "title": "Integrating existing content into O'neill's new e-commerce platform",
+          "link": "https://www.deptagency.com"
+        }
+      ]
+    },
+    {
+      "name": "tiles",
+      "items": [
+        {
+          "client": "Be Lighting",
+          "title": "Delivering clarity on a global scale",
+          "link": "https://www.deptagency.com",
+          "image": "lightning.png"
+        },
+        {
+          "client": "Tui",
+          "title": "Swipe to find your next holiday destination",
+          "link": "https://www.deptagency.com",
+          "image": "tui.png"
+        }
+      ]
+    },
+    {
+      "name": "tilesFeatured",
+      "items": [
+        {
+          "client": "Butlins",
+          "title": "Enhancing customer experience for personalised holiday planning using real time data",
+          "link": "https://www.deptagency.com"
+        },
+        {
+          "client": "Vacanseselect",
+          "title": "Predicting booking behavior for holidays with smart data, voice search and machine learning",
+          "link": "https://www.deptagency.com"
+        },
+        {
+          "client": "Florensis",
+          "title": "Rethinking the entire online ecosystem",
+          "link": "https://www.deptagency.com",
+          "image": "florensis.png"
+        }
+      ]
+    },
+    {
+      "name": "tiles",
+      "items": [
+        {
+          "client": "Chocomel",
+          "title": "A campaign for the limited edition letter packs",
+          "link": "https://www.deptagency.com",
+          "image": "chocomel.png"
+        },
+        {
+          "client": "JBL",
+          "title": "Live like a champion with Jerome Booteng",
+          "link": "https://www.deptagency.com",
+          "image": "jbl.png"
+        },
+        {
+          "client": "Zalando",
+          "title": "Innovative SEO and content strategy for Zalando",
+          "link": "https://www.deptagency.com",
+          "image": "zalando.png"
+        },
+        {
+          "client": "Koninklijke Bibliotheek",
+          "title": "The search for the most influential book ever",
+          "link": "https://www.deptagency.com",
+          "image": "koninklijke-bibliotheek.png"
+        }
+      ]
+    },
+    {
+      "name": "quote",
+      "item": {
+        "quote": "“Dept helped us tell our story through a bold new identity and a robust online experience. To the tune of 60% growth in online bookings in just one month.”",
+        "name": "Mattijs ten Brink – CEO, Transavia"
+      }
+    },
+    {
+      "name": "tiles",
+      "items": [
+        {
+          "client": "Liberty Global",
+          "title": "Delivering complex commerce solutions",
+          "link": "https://www.deptagency.com",
+          "image": "liberty-global.png"
+        },
+        {
+          "client": "Arla",
+          "title": "Swipe to find your next holiday destination",
+          "link": "https://www.deptagency.com",
+          "image": "arla.png"
+        }
+      ]
+    }
+  ]
+}

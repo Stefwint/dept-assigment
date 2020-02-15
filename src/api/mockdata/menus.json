@@ -1,0 +1,98 @@
+{
+  "menus": {
+    "mainMenu": [
+      {
+        "title": "Home",
+        "slug": "home",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Werk",
+        "slug": "werk",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Over",
+        "slug": "over",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Diensten",
+        "slug": "diensten",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Partners",
+        "slug": "partners",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Stories",
+        "slug": "stories",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Vacatures",
+        "slug": "vacatures",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Events",
+        "slug": "events",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Contact",
+        "slug": "contact",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      }
+    ],
+    "footerMenu": [
+      {
+        "title": "Work",
+        "slug": "work",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Service",
+        "slug": "service",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Stories",
+        "slug": "stories",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "About",
+        "slug": "about",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Careers",
+        "slug": "careers",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      },
+      {
+        "title": "Contact",
+        "slug": "contact",
+        "url": "https://www.deptagency.nl",
+        "target": "_blank"
+      }
+    ]
+  }
+}
