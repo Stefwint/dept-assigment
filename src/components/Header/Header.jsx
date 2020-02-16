@@ -7,7 +7,7 @@ import Hero from './Hero';
 import Menu, { MenuButton } from './Menu';
 
 // Styling
-import { Box, Container, Flex, Text } from '../styles';
+import { Box, Flex, Text } from '../styles';
 import SHeader from './styles';
 
 const Header = ({ menu, title }) => {
@@ -15,7 +15,7 @@ const Header = ({ menu, title }) => {
 
   return (
     <Box>
-      <SHeader pb={[15, 20]} pt={[15, 50]} px={[20, 0]}>
+      <SHeader pb={[15, 20]} pt={[15, 50]} px={[20, 40]}>
         <Flex justifyContent="space-between" alignItems="center">
           <Box className="logo-wrapper">
             <Link href="/">

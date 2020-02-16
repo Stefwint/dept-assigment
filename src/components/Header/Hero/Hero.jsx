@@ -16,7 +16,7 @@ const Hero = ({ title }) => (
         flexDirection="column"
         justifyContent="space-between"
       >
-        <Text as="h1" fontSize={[170, 400]}>
+        <Text as="h1" fontSize={[170, 300, 400]}>
           {title}
         </Text>
         <Flex justifyContent={['center', 'flex-end']} mt={[75, 0]}>

@@ -1,16 +1,27 @@
 import styled, { css } from 'styled-components';
-import { Row, Text } from '../styles';
+import { Box, Text } from '../styles';
 import { rem } from 'polished';
 import { media } from '../../utils';
 import theme from '../../theme';
 
-const SHeader = styled(Row)`
+const SHeader = styled(Box)`
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
-  border-bottom: 1px solid ${theme.colors.black};
+  margin: 0 auto;
+  width: 100%;
+  max-width: ${rem(1280)};
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: calc(100% - 80px);
+    border-bottom: 1px solid ${theme.colors.black};
+  }
 
   .logo-wrapper {
     position: relative;
@@ -26,8 +37,11 @@ const SHeader = styled(Row)`
     top: 0;
     left: 0;
     z-index: 99;
-    border-bottom: 0;
     background: ${theme.colors.white};
+
+    &:after {
+      display: none;
+    }
 
     .logo-wrapper {
       img {

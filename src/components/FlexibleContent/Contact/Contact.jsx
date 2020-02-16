@@ -8,10 +8,8 @@ import Form from '../../Form';
 import { Box, Column, Flex, Row, Text } from '../../styles';
 
 const Contact = ({ title, form }) => {
-  const onSubmit = e => {
-    e.preventDefault();
-
-    console.log('sent');
+  const onSubmit = values => {
+    console.log(values);
   };
 
   return (

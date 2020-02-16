@@ -4,8 +4,8 @@
   "form": {
     "fields": [
       {
-        "id": "name",
         "type": "text",
+        "name": "name",
         "label": "Name",
         "isRequired": true,
         "errorMessage": {
@@ -13,8 +13,8 @@
         }
       },
       {
-        "id": "email",
-        "type": "email",
+        "type": "text",
+        "name": "email",
         "label": "Email",
         "isRequired": true,
         "errorMessage": {
@@ -23,7 +23,7 @@
         }
       },
       {
-        "id": "message",
+        "name": "message",
         "type": "textarea",
         "label": "Message",
         "isRequired": false
