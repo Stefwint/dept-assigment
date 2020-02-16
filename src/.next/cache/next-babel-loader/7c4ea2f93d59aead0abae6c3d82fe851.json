@@ -1,1 +1,0 @@
-{"ast":null,"code":"var px2rem = function px2rem() {\n  for (var _len = arguments.length, pxs = new Array(_len), _key = 0; _key < _len; _key++) {\n    pxs[_key] = arguments[_key];\n  }\n\n  return pxs.map(function (px) {\n    return \"\".concat(px / 16, \"rem\");\n  }).join(' ');\n};\n\nexport default px2rem;","map":null,"metadata":{},"sourceType":"module"}

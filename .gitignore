@@ -10,6 +10,7 @@ package-lock.json
 
 # production
 /dist
+src/.next
 
 # misc
 .DS_Store

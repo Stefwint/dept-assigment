@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
 import { ArrowButton, Box } from '../styles';
+import theme from '../../theme';
 
 const STile = styled(Box)`
   a {
@@ -8,8 +9,21 @@ const STile = styled(Box)`
     text-decoration: none;
 
     > div {
+      position: relative;
       overflow: hidden;
       transition: transform 0.3s ease;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: ${theme.colors.white};
+        transform: ${props => (props.inView ? 'translateX(100%)' : 'translateX(0)')};
+        transition: transform 0.4s ease;
+      }
 
       img {
         display: block;
@@ -23,6 +37,12 @@ const STile = styled(Box)`
     span {
       display: block;
       text-transform: uppercase;
+    }
+
+    span,
+    h3 {
+      opacity: ${props => (props.inView ? '1' : '0')};
+      transition: opacity 0.3s ease;
     }
 
     &:hover,

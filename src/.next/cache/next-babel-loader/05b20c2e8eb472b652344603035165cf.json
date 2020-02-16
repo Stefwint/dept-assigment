@@ -1,1 +1,0 @@
-{"ast":null,"code":"import Wysiwyg from './Wysiwyg';\nexport default Wysiwyg;","map":{"version":3,"sources":["/Users/stefwinterswijk/Werk/dept/src/components/Wysiwyg/index.js"],"names":["Wysiwyg"],"mappings":"AAAA,OAAOA,OAAP,MAAoB,WAApB;AAEA,eAAeA,OAAf","sourcesContent":["import Wysiwyg from './Wysiwyg';\n\nexport default Wysiwyg;\n"]},"metadata":{},"sourceType":"module"}
