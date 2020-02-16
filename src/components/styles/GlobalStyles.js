@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.fonts.body};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow: ${props => (props.openMenu ? 'hidden' : 'initial')};
   }
 
   *,

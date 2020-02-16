@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 // Utils
@@ -14,15 +14,21 @@ import { GlobalStyles } from './styles';
 import theme from '../theme';
 
 const Page = ({ children }) => {
+  const [openMenu, setOpenMenu] = useState(false);
   const { menus } = useContext(AppContext);
   const title = 'Dept | Reinvent Digital';
 
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <GlobalStyles />
+        <GlobalStyles openMenu={openMenu} />
         <Head title={title} />
-        <Header title={title} menu={menus?.mainMenu} />
+        <Header
+          title={title}
+          menu={menus?.mainMenu}
+          openMenu={openMenu}
+          setOpenMenu={setOpenMenu}
+        />
         <div>{children}</div>
         <Footer title={title} menu={menus?.footerMenu} />
       </div>
