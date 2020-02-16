@@ -1,0 +1,43 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi ./polyfill.js node_modules/next-offline/register-sw-compiled.js ./node_modules/next/dist/client/next.js": 0,
+      "multi next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.jsx! node_modules/next/dist/client/router.js": 1,
+      "ignored node_modules/readable-stream/lib util": 2,
+      "ignored node_modules/readable-stream/lib/internal/streams util": 3
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "framework": 2,
+      "532c285ad55b9c4aaa6496be90551756532fc50a": 3,
+      "c1e9158dd27effe995e89c357126125e33883af2": 4,
+      "static/ARQbDlXQ9xhZrVZTlNiRb/pages/_app.js": 5,
+      "static/ARQbDlXQ9xhZrVZTlNiRb/pages/_error.js": 6,
+      "static/ARQbDlXQ9xhZrVZTlNiRb/pages/index.js": 7,
+      "static/runtime/main.js": 8,
+      "static/runtime/polyfills.js": 9
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

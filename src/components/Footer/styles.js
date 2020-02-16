@@ -10,7 +10,7 @@ const SFooter = styled(Container)`
   hr {
     display: inline-block;
     width: 100%;
-    margin: ${rem(30, 0)};
+    margin: ${rem(30)} 0;
     border: 0;
     border-bottom: 2px solid ${theme.colors.mediumGray};
   }

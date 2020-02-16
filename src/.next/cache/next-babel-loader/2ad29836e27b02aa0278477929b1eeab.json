@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Tiles from './Tiles';\nexport default Tiles;","map":{"version":3,"sources":["/Users/stefwinterswijk/Werk/dept/src/components/FlexibleContent/Tiles/index.js"],"names":["Tiles"],"mappings":"AAAA,OAAOA,KAAP,MAAkB,SAAlB;AAEA,eAAeA,KAAf","sourcesContent":["import Tiles from './Tiles';\n\nexport default Tiles;\n"]},"metadata":{},"sourceType":"module"}

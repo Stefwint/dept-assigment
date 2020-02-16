@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Tile from './Tile';\nexport default Tile;","map":null,"metadata":{},"sourceType":"module"}

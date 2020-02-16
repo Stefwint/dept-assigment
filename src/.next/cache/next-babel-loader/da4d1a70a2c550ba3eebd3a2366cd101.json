@@ -1,0 +1,1 @@
+{"ast":null,"code":"var hex2rgba = function hex2rgba(hex, opacity) {\n  var h = /^#?([a-f\\d]{2})([a-f\\d]{2})([a-f\\d]{2})$/i.exec(hex);\n  return \"rgba(\".concat(parseInt(h[1], 16), \",\").concat(parseInt(h[2], 16), \",\").concat(parseInt(h[3], 16), \",\").concat(opacity, \")\");\n};\n\nexport default hex2rgba;","map":null,"metadata":{},"sourceType":"module"}

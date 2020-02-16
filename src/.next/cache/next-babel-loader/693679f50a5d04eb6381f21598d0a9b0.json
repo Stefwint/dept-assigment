@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Quote from './Quote';\nexport default Quote;","map":{"version":3,"sources":["/Users/stefwinterswijk/Werk/dept/src/components/FlexibleContent/Quote/index.js"],"names":["Quote"],"mappings":"AAAA,OAAOA,KAAP,MAAkB,SAAlB;AAEA,eAAeA,KAAf","sourcesContent":["import Quote from './Quote';\n\nexport default Quote;\n"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import cases from './cases';\nexport { cases };","map":{"version":3,"sources":["/Users/stefwinterswijk/Werk/dept/src/api/mockdata/index.js"],"names":["cases"],"mappings":"AAAA,OAAOA,KAAP,MAAkB,SAAlB;AAEA,SAASA,KAAT","sourcesContent":["import cases from './cases';\n\nexport { cases };\n"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import get from './get';\nexport { get };","map":{"version":3,"sources":["/Users/stefwinterswijk/Werk/dept/src/api/callers/index.js"],"names":["get"],"mappings":"AAAA,OAAOA,GAAP,MAAgB,OAAhB;AAEA,SAASA,GAAT","sourcesContent":["import get from './get';\n\nexport { get };\n"]},"metadata":{},"sourceType":"module"}

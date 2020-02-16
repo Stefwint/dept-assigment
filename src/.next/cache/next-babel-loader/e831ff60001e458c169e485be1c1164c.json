@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Hero from './Hero';\nexport default Hero;","map":{"version":3,"sources":["/Users/stefwinterswijk/Werk/dept/src/components/Header/Hero/index.js"],"names":["Hero"],"mappings":"AAAA,OAAOA,IAAP,MAAiB,QAAjB;AAEA,eAAeA,IAAf","sourcesContent":["import Hero from './Hero';\n\nexport default Hero;\n"]},"metadata":{},"sourceType":"module"}

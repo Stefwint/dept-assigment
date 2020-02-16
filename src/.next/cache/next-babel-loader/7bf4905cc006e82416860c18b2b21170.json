@@ -1,0 +1,1 @@
+{"ast":null,"code":"import get from './get';\nexport { get };","map":null,"metadata":{},"sourceType":"module"}
