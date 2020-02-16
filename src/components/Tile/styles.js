@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { rem } from 'polished';
-import { Box } from '../styles';
+import { ArrowButton, Box } from '../styles';
 
 const STile = styled(Box)`
   a {
@@ -32,6 +32,12 @@ const STile = styled(Box)`
 
         img {
           transform: scale(1.08);
+        }
+      }
+
+      ${ArrowButton} {
+        &:before {
+          transform: translateX(5px);
         }
       }
     }

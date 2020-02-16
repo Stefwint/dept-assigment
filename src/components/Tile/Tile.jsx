@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Styling
-import { Box, Text } from '../styles';
+import { ArrowButton, Box, Text } from '../styles';
 import STile from './styles';
 import theme from '../../theme';
 
@@ -21,13 +21,15 @@ const Tile = ({ title, client, image, link, isSmall }) => (
       )}
       <Text
         as="h3"
-        mt={10}
+        mt={15}
+        mb={20}
         fontSize={!isSmall ? 30 : 24}
         fontWeight={400}
         color={theme.colors.black}
       >
         {title}
       </Text>
+      <ArrowButton>View case</ArrowButton>
     </a>
   </STile>
 );

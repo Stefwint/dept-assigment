@@ -63,4 +63,23 @@ const Button = styled.button`
     `};
 `;
 
+export const ArrowButton = styled.span`
+  color: ${theme.colors.blue};
+  text-transform: uppercase;
+  font-size: ${rem(14)};
+  font-weight: 700;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    margin-right: ${rem(10)};
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid ${theme.colors.blue};
+    transition: transform 0.3s ease;
+  }
+`;
+
 export default Button;
