@@ -1,7 +1,7 @@
 import React from 'react';
 import { get } from '../api/callers';
 
-const isServer = typeof window === 'undefined';
+const isServer = !process.browser;
 const clientStore = isServer ? null : {};
 
 async function fetchGlobalData() {

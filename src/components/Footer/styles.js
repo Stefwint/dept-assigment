@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { px2rem } from '../../utils';
+import { rem } from 'polished';
 import { Container, Flex } from '../styles';
 import theme from '../../theme';
 
@@ -10,7 +10,7 @@ const SFooter = styled(Container)`
   hr {
     display: inline-block;
     width: 100%;
-    margin: ${px2rem(30, 0)};
+    margin: ${rem(30, 0)};
     border: 0;
     border-bottom: 2px solid ${theme.colors.mediumGray};
   }

@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Row, Text } from '../styles';
-import { media, px2rem } from '../../utils';
+import { rem } from 'polished';
+import { media } from '../../utils';
 import theme from '../../theme';
 
 const SHeader = styled(Row)`
@@ -11,22 +12,34 @@ const SHeader = styled(Row)`
   z-index: 2;
   border-bottom: 1px solid ${theme.colors.black};
 
-  img {
-    display: block;
+  .logo-wrapper {
+    position: relative;
+    z-index: 99;
+
+    img {
+      display: block;
+    }
   }
 
   ${media.smallOnly`
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     border-bottom: 0;
+    background: ${theme.colors.white};
 
-    img {
-      max-height: ${px2rem(14)};
+    .logo-wrapper {
+      img {
+        max-height: ${rem(14)};
+      }
     }
   `}
 `;
 
 export const SMenuButton = styled(Text)`
   position: relative;
-  padding-right: ${px2rem(40)};
+  padding-right: ${rem(40)};
   background: 0;
   border: 0;
   box-shadow: none;
@@ -38,31 +51,31 @@ export const SMenuButton = styled(Text)`
     content: '';
     position: absolute;
     right: 0;
-    width: ${px2rem(20)};
-    height: ${px2rem(2)};
+    width: ${rem(20)};
+    height: ${rem(2)};
     background: ${theme.colors.black};
     transition: transform 0.3s ease;
   }
 
   &:before {
-    top: ${px2rem(5)};
+    top: ${rem(5)};
 
     ${props =>
       props.openMenu &&
       css`
-        top: ${px2rem(8)};
+        top: ${rem(8)};
         transform: rotate(-45deg);
         transition: transform 0.3s ease;
       `}
   }
 
   &:after {
-    top: ${px2rem(12)};
+    top: ${rem(12)};
 
     ${props =>
       props.openMenu &&
       css`
-        top: ${px2rem(8)};
+        top: ${rem(8)};
         transform: rotate(45deg);
         transition: transform 0.3s ease;
       `}

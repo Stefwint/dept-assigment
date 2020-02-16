@@ -10,9 +10,12 @@ There are a couple of things you will need to have installed within your working
 
 ***
 
-# Starting the project
+# Starting the project in development mode
 To start developing for the frontend, go into the src/ directory of the project and run `npm install` and after that run `npm start`.
 It's possible to use yarn instead, but please don't mix npm and yarn.
+
+# Starting the project in production mode
+To start the project in production mode, go into the src/ directory of the project and run `npm install` followed by `npm run build` and after that run `npm run serve`.
 
 ## JavaScript
 The entire frontend is built in React, which is a JavaScript UI Framework. It allows me to write in JSX, which is a JavaScript syntax very similar to HTML but enhanced with the lovely features of JavaScript. JSX should preferrably only ever be written inside .jsx files, not .js files. This way, you can look at the name and extension of a file and have a suggestion about it's contents.

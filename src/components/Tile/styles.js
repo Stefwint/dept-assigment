@@ -1,6 +1,6 @@
 import styled from 'styled-components';
+import { rem } from 'polished';
 import { Box } from '../styles';
-import { px2rem } from '../../utils';
 
 const STile = styled(Box)`
   a {
@@ -14,7 +14,7 @@ const STile = styled(Box)`
       img {
         display: block;
         width: 100%;
-        max-height: ${px2rem(500)};
+        max-height: ${rem(500)};
         object-fit: cover;
         transition: transform 0.3s ease;
       }

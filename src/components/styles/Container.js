@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
+import { rem } from 'polished';
 import { Box } from './Flex';
-import { media, px2rem } from '../../utils';
+import { media } from '../../utils';
 
 const Container = styled(Box)`
   width: 100%;
@@ -9,8 +10,8 @@ const Container = styled(Box)`
     ${props =>
       !props.noPadding &&
       css`
-        padding-left: ${px2rem(30)};
-        padding-right: ${px2rem(30)};
+        padding-left: ${rem(30)};
+        padding-right: ${rem(30)};
       `}
   `}
 `;

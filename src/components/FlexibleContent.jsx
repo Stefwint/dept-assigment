@@ -9,7 +9,7 @@ import Contact from './FlexibleContent/Contact';
 
 const FlexibleContent = ({ layouts }) => {
   return (
-    <React.Fragment>
+    <>
       {layouts &&
         layouts.map(layout => {
           switch (layout.name) {
@@ -33,7 +33,7 @@ const FlexibleContent = ({ layouts }) => {
               return null;
           }
         })}
-    </React.Fragment>
+    </>
   );
 };
 

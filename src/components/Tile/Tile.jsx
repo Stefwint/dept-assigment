@@ -7,7 +7,7 @@ import STile from './styles';
 import theme from '../../theme';
 
 const Tile = ({ title, client, image, link, isSmall }) => (
-  <STile mb={isSmall ? [25, 0] : 0} pt={isSmall ? [20, 0] : 0}>
+  <STile mb={isSmall ? [25, 0] : 0} pt={isSmall ? 20 : 0}>
     <a href={link} target="_blank">
       {image && !isSmall && (
         <Box mb={20}>

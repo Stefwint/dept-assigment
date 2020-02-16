@@ -37,18 +37,6 @@ app
     // handle next files
     server.get('/_next/*', (req, res) => handle(req, res));
 
-    server.get('/search', (req, res) => {
-      const queryParams = { q: req.query.q };
-      app.render(req, res, '/search', queryParams);
-    });
-
-    // match /page/subpage/sub_sub...
-    // make sure req.url contains only leters, numbers and `-_` symbols
-    server.get('(*/)?:slug([a-zA-Z0-9-_]+)', (req, res) => {
-      const queryParams = { slug: req.params.slug, apiRoute: 'pages' };
-      app.render(req, res, '/page', queryParams);
-    });
-
     // ServiceWorker
     server.get('/service-worker.js', ServiceWorker(app));
 

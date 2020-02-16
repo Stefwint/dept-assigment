@@ -4,42 +4,46 @@ import Link from 'next/link';
 
 // Components
 import Hero from './Hero';
+import Menu, { MenuButton } from './Menu';
 
 // Styling
 import { Box, Container, Flex, Text } from '../styles';
-import SHeader, { SMenuButton } from './styles';
+import SHeader from './styles';
 
-const Header = ({ title }) => {
+const Header = ({ menu, title }) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <Container noPadding>
+    <Box>
       <SHeader pb={[15, 20]} pt={[15, 50]} px={[20, 0]}>
         <Flex justifyContent="space-between" alignItems="center">
-          <Link href="/">
-            <a>
-              <img src="../../static/logo.svg" alt={title} />
-            </a>
-          </Link>
+          <Box className="logo-wrapper">
+            <Link href="/">
+              <a>
+                <img src={`../../static/${openMenu ? 'logoWhite' : 'logo'}.svg`} alt={title} />
+              </a>
+            </Link>
+          </Box>
           <Box>
-            <SMenuButton
-              as="button"
-              fontSize={18}
-              openMenu={openMenu}
-              onClick={() => setOpenMenu(!openMenu)}
-            >
+            <MenuButton openMenu={openMenu} setOpenMenu={setOpenMenu}>
               <Text as="span">MENU</Text>
-            </SMenuButton>
+            </MenuButton>
+            <Menu isOpen={openMenu} menu={menu} />
           </Box>
         </Flex>
       </SHeader>
       <Hero title="Work" />
-    </Container>
+    </Box>
   );
 };
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
+  menu: PropTypes.arrayOf(PropTypes.object),
+};
+
+Header.defaultProps = {
+  menu: [],
 };
 
 export default Header;

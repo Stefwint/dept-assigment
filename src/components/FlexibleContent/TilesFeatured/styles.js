@@ -1,11 +1,11 @@
 import styled from 'styled-components';
+import { rem } from 'polished';
 import { Row } from '../../styles';
-import { px2rem } from '../../../utils';
 import theme from '../../../theme';
 
 const STilesFeatured = styled(Row)`
   .small-tiles {
-    max-height: ${px2rem(500)};
+    max-height: ${rem(500)};
 
     > div {
       height: 100%;

@@ -13,6 +13,7 @@ export default {
     lightGray: '#f3f6f6',
     mediumGray: '#3e3e3e',
     warmGray: '#808080',
+    menuGray: '#a3a3a3',
     blue: '#1A18F7',
     red: '#ff2929',
     border: '#dddddd',

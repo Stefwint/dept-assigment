@@ -1,15 +1,16 @@
 import styled, { css } from 'styled-components';
 import { space } from 'styled-system';
-import { media, px2rem } from '../../utils';
+import { rem } from 'polished';
+import { media } from '../../utils';
 import theme from '../../theme';
 
 const Button = styled.button`
   ${space};
   position: relative;
   display: inline-block;
-  padding: ${px2rem(8, 40)};
+  padding: ${`${rem(8)} ${rem(40)}`};
   overflow: hidden;
-  font-size: ${px2rem(15)};
+  font-size: ${rem(15)};
   font-weight: 700;
   line-height: 2;
   text-transform: uppercase;
@@ -24,8 +25,8 @@ const Button = styled.button`
     position: absolute;
     top: -50px;
     left: -75px;
-    height: ${px2rem(155)};
-    width: ${px2rem(50)};
+    height: ${rem(155)};
+    width: ${rem(50)};
     opacity: 0.2;
     transform: rotate(35deg);
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);

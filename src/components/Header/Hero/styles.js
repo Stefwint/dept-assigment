@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Box } from '../../styles/Flex';
-import { media, px2rem } from '../../../utils';
+import { rem } from 'polished';
+import { media } from '../../../utils';
 
 const SHero = styled(Box)`
   position: relative;
@@ -8,7 +9,7 @@ const SHero = styled(Box)`
   left: 0;
   height: 100vh;
   width: 100vw;
-  min-height: ${px2rem(700)};
+  min-height: ${rem(700)};
 
   .hero-wrapper {
     position: relative;
@@ -34,7 +35,11 @@ const SHero = styled(Box)`
   ${media.smallOnly`
     width: 100%;
     height: inherit;
-    min-height: ${px2rem(350)};
+    min-height: ${rem(350)};
+
+    img {
+      height: ${rem(320)};
+    }
   `}
 `;
 

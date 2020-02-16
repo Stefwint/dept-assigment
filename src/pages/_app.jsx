@@ -14,13 +14,13 @@ class MyApp extends App {
     const { Component, pageProps, appData } = this.props;
 
     return (
-      <React.Fragment>
+      <>
         <AppProvider {...appData}>
           <Page data={pageProps.data}>
             <Component {...pageProps} />
           </Page>
         </AppProvider>
-      </React.Fragment>
+      </>
     );
   }
 }

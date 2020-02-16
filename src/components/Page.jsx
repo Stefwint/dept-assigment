@@ -22,7 +22,7 @@ const Page = ({ children }) => {
       <div>
         <GlobalStyles />
         <Head title={title} />
-        <Header title={title} />
+        <Header title={title} menu={menus?.mainMenu} />
         <div>{children}</div>
         <Footer title={title} menu={menus?.footerMenu} />
       </div>

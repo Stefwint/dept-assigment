@@ -33,14 +33,14 @@ TextArea.propTypes = {
   label: PropTypes.string,
   id: PropTypes.string.isRequired,
   isRequired: PropTypes.bool,
-  errorMessage: PropTypes.object,
+  errorMessage: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.array]),
 };
 
 TextArea.defaultProps = {
   label: '',
   isRequired: false,
-  errorMessage: {},
+  errorMessage: false,
   width: [1, 1 / 2],
 };
 
