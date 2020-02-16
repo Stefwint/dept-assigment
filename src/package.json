@@ -76,7 +76,7 @@
     "lint-staged": "^9.5.0",
     "object-fit-images": "^3.2.4",
     "react-gravity-form": "0.0.30",
-    "react-select": "^3.0.4",
+    "react-select": "^3.0.8",
     "react-test-renderer": "^16.8.1",
     "uuid": "^3.3.2"
   }
