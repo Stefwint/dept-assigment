@@ -15,7 +15,7 @@ const Tile = ({ title, client, image, link, isSmall }) => (
         </Box>
       )}
       {client && (
-        <Text as="span" fontSize={15} fontWeight={700} color={theme.colors.gray}>
+        <Text as="span" fontSize={[14, 15]} fontWeight={700} color={theme.colors.gray}>
           {client}
         </Text>
       )}

@@ -9,10 +9,10 @@ import theme from '../../../theme';
 
 const Clients = ({ title, description, logos }) => (
   <Container bg={theme.colors.lightGray}>
-    <Row mt={40} pt={80} pb={100}>
+    <Row mt={40} pt={[40, 80]} pb={[40, 100]} px={0}>
       <Flex justifyContent="center">
         <Box width={[1, 6 / 12]}>
-          <Text as="h2" fontSize={60} fontWeight={400} textAlign="center">
+          <Text as="h2" fontSize={[30, 60]} fontWeight={400} textAlign="center">
             {title}
           </Text>
           {description && (
@@ -23,7 +23,7 @@ const Clients = ({ title, description, logos }) => (
         </Box>
       </Flex>
       {logos && (
-        <Flex as="ul" p={0} mt={50} flexWrap="wrap">
+        <Flex as="ul" p={0} mt={[30, 50]} flexWrap="wrap">
           {logos.map(item => (
             <SLogo key={uuid()} as="li" width={[1 / 2, 1 / 4]} px={[20, 0]}>
               <a href={item.link} target="_blank">

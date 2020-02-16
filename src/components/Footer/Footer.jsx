@@ -16,10 +16,10 @@ import theme from '../../theme';
 
 const Footer = ({ menu, title }) => (
   <SFooter as="footer" noPadding>
-    <Box width={[1, 11 / 12]} py={[60, 100]} bg={theme.colors.black}>
-      <Row px={[20, 0]}>
+    <Box width={[1, 1, 11 / 12]} px={[20, 0]} py={[60, 100]} bg={theme.colors.black}>
+      <Row px={[20, 0]} pl={[0, 60]}>
         <Flex alignItems={['flex-start', 'flex-end']}>
-          <Box width={3 / 12} className="show-for-medium">
+          <Box width={3 / 12} className="show-for-small">
             <Link href="/">
               <a>
                 <img src="../../static/logoWhite.svg" alt={title} />
