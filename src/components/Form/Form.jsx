@@ -32,7 +32,7 @@ const Form = ({ fields, button, onSubmit }) => (
       </Flex>
     )}
     {button && (
-      <Box ml={25} mt={30}>
+      <Box ml={[0, 25]} mt={[15, 30]}>
         <Button type={button.type} bg={theme.colors.blue}>
           {button.text}
         </Button>

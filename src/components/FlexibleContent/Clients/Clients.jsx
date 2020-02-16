@@ -23,9 +23,9 @@ const Clients = ({ title, description, logos }) => (
         </Box>
       </Flex>
       {logos && (
-        <Flex as="ul" mt={50} flexWrap="wrap">
+        <Flex as="ul" p={0} mt={50} flexWrap="wrap">
           {logos.map(item => (
-            <SLogo key={uuid()} as="li" width={[1 / 2, 1 / 4]}>
+            <SLogo key={uuid()} as="li" width={[1 / 2, 1 / 4]} px={[20, 0]}>
               <a href={item.link} target="_blank">
                 <img src={`../../../static/logos/${item.logo}`} alt="image" />
               </a>

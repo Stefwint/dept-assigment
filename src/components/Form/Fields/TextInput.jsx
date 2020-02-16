@@ -10,7 +10,7 @@ const TextInput = ({ label, id, isRequired, errorMessage, width, ...props }) => 
   const [touched, setTouched] = useState(false);
 
   return (
-    <Flex px={25} flexDirection="column" width={width}>
+    <Flex my={[15, 30]} px={[0, 25]} flexDirection="column" width={width}>
       {label && (
         <Flex alignItems="center">
           <FormLabel htmlFor={id}>{isRequired ? label + '*' : label}</FormLabel>

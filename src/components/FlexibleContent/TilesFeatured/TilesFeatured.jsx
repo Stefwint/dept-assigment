@@ -14,8 +14,8 @@ const TilesFeatured = ({ items }) => {
   const smallTiles = items.filter(item => !item.image);
 
   return (
-    <STilesFeatured px={0}>
-      <Flex mx={-15} my={40} flexWrap="wrap">
+    <STilesFeatured px={[20, 0]}>
+      <Flex mx={-15} my={[25, 40]} flexWrap="wrap">
         <Box px={15} width={[1, 8 / 12]} order={featuredItem === 0 ? 0 : 1}>
           <Tile {...items[featuredItem]} />
         </Box>
@@ -23,6 +23,7 @@ const TilesFeatured = ({ items }) => {
           flexDirection="column"
           justifyContent="space-between"
           px={15}
+          mb={[50, 0]}
           width={[1, 4 / 12]}
           order={featuredItem === 0 ? 1 : 0}
           className="small-tiles"

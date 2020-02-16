@@ -15,11 +15,11 @@ import SFooter, { SFooterMenu } from './styles';
 import theme from '../../theme';
 
 const Footer = ({ menu, title }) => (
-  <SFooter as="footer">
-    <Box width={11 / 12} py={100} bg={theme.colors.black}>
-      <Row px={0}>
-        <Flex alignItems="flex-end">
-          <Box width={3 / 12}>
+  <SFooter as="footer" noPadding>
+    <Box width={[1, 11 / 12]} py={[60, 100]} bg={theme.colors.black}>
+      <Row px={[20, 0]}>
+        <Flex alignItems={['flex-start', 'flex-end']}>
+          <Box width={3 / 12} className="show-for-medium">
             <Link href="/">
               <a>
                 <img src="../../static/logoWhite.svg" alt={title} />
@@ -27,18 +27,24 @@ const Footer = ({ menu, title }) => (
             </Link>
           </Box>
           {menu && (
-            <SFooterMenu as="ul" width={6 / 12}>
+            <SFooterMenu as="ul" flexDirection={['column', 'row']} width={6 / 12}>
               {menu.map(item => (
                 <Box key={uuid()} as="li">
-                  <Text as="a" href={item.url} target={item.target} px={15}>
+                  <Text
+                    as="a"
+                    href={item.url}
+                    target={item.target}
+                    px={[0, 15]}
+                    fontSize={[32, 18]}
+                  >
                     {item.title}
                   </Text>
                 </Box>
               ))}
             </SFooterMenu>
           )}
-          <Box ml="auto">
-            <Text as="a" href="https://www.facebook.com/DeptAgency/" target="_blank">
+          <Flex flexDirection={['column', 'row']} ml="auto">
+            <Text as="a" href="https://www.facebook.com/DeptAgency/" target="_blank" mb={[20, 0]}>
               <Icon
                 icon={ICONS.FACEBOOK}
                 viewbox="0 0 23 50"
@@ -46,10 +52,16 @@ const Footer = ({ menu, title }) => (
                 color={theme.colors.white}
               />
             </Text>
-            <Text as="a" ml={30} href="https://twitter.com/deptagency" target="_blank">
+            <Text
+              as="a"
+              ml={[0, 30]}
+              mb={[20, 0]}
+              href="https://twitter.com/deptagency"
+              target="_blank"
+            >
               <Icon icon={ICONS.TWITTER} viewbox="0 0 50 50" size={15} color={theme.colors.white} />
             </Text>
-            <Text as="a" ml={30} href="https://www.instagram.com/deptagency/" target="_blank">
+            <Text as="a" ml={[0, 30]} href="https://www.instagram.com/deptagency/" target="_blank">
               <Icon
                 icon={ICONS.INSTAGRAM}
                 viewbox="0 0 14 14"
@@ -57,23 +69,30 @@ const Footer = ({ menu, title }) => (
                 color={theme.colors.white}
               />
             </Text>
-          </Box>
+          </Flex>
         </Flex>
         <hr />
-        <Flex mt={30} alignItems="center">
-          <Column offset={3 / 12}>
-            <Flex>
-              <Text px={15} fontSize={13} color={theme.colors.warmGray}>
+        <Flex mt={[0, 30]} flexDirection={['column', 'row']}>
+          <Column offset={[0, 3 / 12]}>
+            <Flex flexDirection={['column', 'row']} flexWrap="wrap">
+              <Text
+                px={[0, 15]}
+                py={['3px', 0]}
+                width={[1, 'auto']}
+                fontSize={13}
+                color={theme.colors.warmGray}
+              >
                 Chamber of Commerce: 63464101
               </Text>
-              <Text px={15} fontSize={13} color={theme.colors.warmGray}>
+              <Text px={[0, 15]} py={['3px', 0]} fontSize={13} color={theme.colors.warmGray}>
                 VAT: NL 8552.47.502.B01
               </Text>
               <Text
                 as="a"
                 href="https://www.deptagency.com/nl-nl/terms-conditions/"
                 target="_blank"
-                px={15}
+                px={[0, 15]}
+                py={['3px', 0]}
                 fontSize={13}
                 color={theme.colors.warmGray}
               >
@@ -81,7 +100,7 @@ const Footer = ({ menu, title }) => (
               </Text>
             </Flex>
           </Column>
-          <Box ml="auto">
+          <Box ml={[0, 'auto']} mt={[25, 0]}>
             <Text fontSize={13} color={theme.colors.warmGray}>
               © {new Date().getFullYear()} Dept Agency
             </Text>
@@ -89,7 +108,7 @@ const Footer = ({ menu, title }) => (
         </Flex>
       </Row>
     </Box>
-    <Flex width={1 / 12} alignItems="center" justifyContent="center">
+    <Flex width={1 / 12} alignItems="center" justifyContent="center" className="show-for-medium">
       <Button
         noStyle
         onClick={() =>

@@ -6,14 +6,21 @@ import { Button, Flex, Text, Row } from '../../styles';
 import SHero from './styles';
 
 const Hero = ({ title }) => (
-  <SHero p={[0, 20]}>
+  <SHero p={[0, 20]} pt={[50, 0]} mb={[30, 0]}>
     <Row px={0} className="hero-wrapper">
-      <Flex pt={120} pb={80} width={1} flexDirection="column" justifyContent="space-between">
-        <Text as="h1" fontSize={400}>
+      <Flex
+        pt={[60, 120]}
+        pb={[0, 80]}
+        px={[20, 0]}
+        width={1}
+        flexDirection="column"
+        justifyContent="space-between"
+      >
+        <Text as="h1" fontSize={[170, 400]}>
           {title}
         </Text>
-        <Flex justifyContent="flex-end">
-          <Button>View case</Button>
+        <Flex justifyContent={['center', 'flex-end']} mt={[40, 0]}>
+          <Button smallFullWidth>View case</Button>
         </Flex>
       </Flex>
     </Row>

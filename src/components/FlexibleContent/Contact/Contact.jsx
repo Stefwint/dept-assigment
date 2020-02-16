@@ -15,10 +15,10 @@ const Contact = ({ title, form }) => {
   };
 
   return (
-    <Row px={0}>
-      <Flex py={80}>
-        <Box width={[1, 3 / 12]}>
-          <Text as="h2" fontSize={60} fontWeight={400}>
+    <Row px={[20, 0]} pr={[40, 0]}>
+      <Flex py={[40, 80]} flexWrap="wrap">
+        <Box width={[1, 3 / 12]} pl={[30, 0]} mb={[20, 0]}>
+          <Text as="h2" fontSize={[30, 60]} fontWeight={400}>
             {title}
           </Text>
         </Box>

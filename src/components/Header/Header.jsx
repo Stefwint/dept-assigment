@@ -13,8 +13,8 @@ const Header = ({ title }) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <Container>
-      <SHeader pb={20} pt={50} px={0}>
+    <Container noPadding>
+      <SHeader pb={[15, 20]} pt={[15, 50]} px={[20, 0]}>
         <Flex justifyContent="space-between" alignItems="center">
           <Link href="/">
             <a>

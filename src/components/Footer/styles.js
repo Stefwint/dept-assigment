@@ -25,7 +25,6 @@ export const SFooterMenu = styled(Flex)`
     a {
       text-transform: uppercase;
       color: ${theme.colors.white};
-      font-size: ${px2rem(18)};
       font-family: ${theme.fonts.heading};
       text-decoration: none;
       transition: opacity 0.3s ease;

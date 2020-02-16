@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Row, Text } from '../styles';
-import { px2rem } from '../../utils';
+import { media, px2rem } from '../../utils';
 import theme from '../../theme';
 
 const SHeader = styled(Row)`
@@ -14,6 +14,14 @@ const SHeader = styled(Row)`
   img {
     display: block;
   }
+
+  ${media.smallOnly`
+    border-bottom: 0;
+
+    img {
+      max-height: ${px2rem(14)};
+    }
+  `}
 `;
 
 export const SMenuButton = styled(Text)`

@@ -11,11 +11,6 @@ const STile = styled(Box)`
       overflow: hidden;
       transition: transform 0.3s ease;
 
-      span {
-        display: block;
-        text-transform: uppercase;
-      }
-
       img {
         display: block;
         width: 100%;
@@ -23,6 +18,11 @@ const STile = styled(Box)`
         object-fit: cover;
         transition: transform 0.3s ease;
       }
+    }
+
+    span {
+      display: block;
+      text-transform: uppercase;
     }
 
     &:hover,

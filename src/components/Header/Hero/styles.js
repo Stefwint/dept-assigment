@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Box } from '../../styles/Flex';
-import { px2rem } from '../../../utils';
+import { media, px2rem } from '../../../utils';
 
 const SHero = styled(Box)`
   position: relative;
@@ -30,6 +30,12 @@ const SHero = styled(Box)`
     width: 100%;
     object-fit: cover;
   }
+
+  ${media.smallOnly`
+    width: 100%;
+    height: inherit;
+    min-height: ${px2rem(350)};
+  `}
 `;
 
 export default SHero;

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { space } from 'styled-system';
-import { px2rem } from '../../utils';
+import { media, px2rem } from '../../utils';
 import theme from '../../theme';
 
 const Button = styled.button`
@@ -42,6 +42,14 @@ const Button = styled.button`
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
+
+  ${props =>
+    props.smallFullWidth &&
+    css`
+      ${media.smallOnly`
+      width: 100%;
+    `}
+    `}
 
   ${props =>
     props.noStyle &&

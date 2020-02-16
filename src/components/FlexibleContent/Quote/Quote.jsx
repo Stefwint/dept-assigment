@@ -9,7 +9,7 @@ const Quote = ({ item }) => {
   const { quote, name } = item;
 
   return (
-    <Row px={0} mt={40}>
+    <Row px={[20, 0]} mt={40}>
       <Flex pt={80} pb={60} justifyContent="center" className="border">
         <Box width={[1, 8 / 12]}>
           {quote && (
