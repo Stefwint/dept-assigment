@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Quote Renders correctly 1`] = `
+<div
+  className="Flex__Box-ro60kk-0 Row-sc-1bf1evj-0 epzZas"
+>
+  <div
+    className="Flex__Box-ro60kk-0 Flex-ro60kk-2 ihhDQr border"
+  >
+    <div
+      className="Flex__Box-ro60kk-0 bMuyXK"
+      width={
+        Array [
+          1,
+          0.6666666666666666,
+        ]
+      }
+    >
+      <blockquote
+        className="Flex__Text-ro60kk-1 bXZXsb"
+        fontSize={
+          Array [
+            24,
+            36,
+          ]
+        }
+      >
+        “Dept helped us tell our story through a bold new identity and a robust online experience. To the tune of 60% growth in online bookings in just one month.”
+      </blockquote>
+      <span
+        className="Flex__Text-ro60kk-1 dlCxQQ block upper"
+        color="#272727"
+        fontSize={13}
+        fontWeight="700"
+      >
+        MATTIJS TEN BRINK – CEO, TRANSAVIA
+      </span>
+    </div>
+  </div>
+</div>
+`;
