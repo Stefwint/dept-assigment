@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+
+// Utils
+import { post } from '../../../api/callers';
 
 // Components
 import Form from '../../Form';
 
 // Styling
-import { Box, Column, Flex, Row, Text } from '../../styles';
+import { Box, Flex, Row, Text } from '../../styles';
 
 const Contact = ({ title, form }) => {
+  const [success, setSuccess] = useState(false);
+
   const onSubmit = values => {
-    console.log(values);
+    post('form/', { values }).then(resp => setSuccess(resp?.message));
   };
 
   return (
@@ -22,7 +27,7 @@ const Contact = ({ title, form }) => {
         </Box>
         {form && (
           <Box width={[1, 1, 7 / 12]} ml="10%">
-            <Form {...form} onSubmit={onSubmit} />
+            {!success ? <Form {...form} onSubmit={onSubmit} /> : <Text as="p">{success}</Text>}
           </Box>
         )}
       </Flex>

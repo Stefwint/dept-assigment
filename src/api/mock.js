@@ -1,6 +1,6 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { cases, clients, contact, menus, countries } from './mockdata';
+import { cases, clients, contact, menus, countries, formResp } from './mockdata';
 
 export default function mock(useMock) {
   if (useMock) {
@@ -23,6 +23,10 @@ export default function mock(useMock) {
 
       .onGet('countries/')
       .reply(200, countries)
+
+      // Mock POST requests
+      .onPost('form/')
+      .reply(200, formResp)
 
       // Let unmatched requests through
       .onAny()
