@@ -14,10 +14,10 @@ import theme from '../../../theme';
 const Menu = ({ menu, isOpen }) => (
   <SMenu isOpen={isOpen}>
     <Box bg={theme.colors.black}>
-      <Countries />
-      <Socials />
+      {isOpen && <Countries />}
+      {isOpen && <Socials />}
       <Row px={20} pb={250} className="menu-wrapper">
-        {menu && (
+        {menu && isOpen && (
           <Flex as="ul" flexDirection="column" px={0}>
             {menu.map(item => (
               <MenuItem key={uuid()} as="li" pl={0} mb={[10, 15]} isActive={item.isActive}>
