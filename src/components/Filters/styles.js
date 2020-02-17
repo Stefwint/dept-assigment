@@ -24,7 +24,7 @@ const SSelect = {
     ...provided,
     color: theme.colors.black,
     transition: 'transform 0.2s ease',
-    transform: state.isFocused ? 'rotate(180deg)' : 'rotate(0)',
+    transform: state.isFocused ? 'rotate(180deg) translateY(-8px)' : 'rotate(0)',
   }),
   menu: provided => ({
     ...provided,
@@ -33,10 +33,12 @@ const SSelect = {
   }),
   menuList: provided => ({
     ...provided,
-    padding: 0,
+    padding: '0 10px 0 0',
   }),
   option: (provided, state) => ({
     ...provided,
+    fontFamily: theme.fonts.heading,
+    fontSize: 20,
     color: theme.colors.black,
     cursor: 'pointer',
     backgroundColor: state.getValue('label')[0]
@@ -63,7 +65,8 @@ const SSelect = {
 };
 
 export const ArrowDown = styled.div`
-  margin-top: 6px;
+  position: relative;
+  top: 6px;
   width: 0;
   height: 0;
   border-left: 4px solid transparent;

@@ -9,7 +9,7 @@ import Tile from '../../Tile';
 import { Box, Flex, Row } from '../../styles';
 
 const Tiles = ({ items }) => (
-  <Row px={[20, 20, 0]}>
+  <Row px={20}>
     <Flex mx={-15} flexWrap="wrap">
       {items?.map(item => (
         <Box key={uuid()} my={[25, 40]} px={15} width={[1, 1 / 2]}>

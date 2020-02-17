@@ -7,11 +7,12 @@ import SHero from './styles';
 
 const Hero = ({ title }) => (
   <SHero p={[0, 20]} pt={[50, 20]} mb={[70, 0]}>
-    <Row px={0} className="hero-wrapper">
+    <Row px={[0, 20]} className="hero-wrapper">
       <Flex
         pt={[70, 120]}
         pb={[0, 80]}
-        px={[20, 0]}
+        pl={[20, 20, 0]}
+        pr={[20, 20, 40]}
         width={1}
         flexDirection="column"
         justifyContent="space-between"

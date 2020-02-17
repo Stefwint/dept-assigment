@@ -12,7 +12,7 @@ const SHeader = styled(Box)`
   z-index: 2;
   margin: 0 auto;
   width: 100%;
-  max-width: ${rem(1280)};
+  max-width: ${rem(1240)};
 
   &:after {
     content: '';

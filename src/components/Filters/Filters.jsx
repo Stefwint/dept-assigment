@@ -30,7 +30,7 @@ const Filters = () => {
   };
 
   return (
-    <Row px={[20, 0]} pt={30} pb={10}>
+    <Row px={20} pt={30} pb={10}>
       <Flex flexDirection={['column', 'row']} justifyContent={['flex-start', 'flex-end']}>
         <Flex alignItems="center">
           <Text

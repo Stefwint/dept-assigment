@@ -10,7 +10,7 @@ import theme from '../../../theme';
 const Menu = ({ menu, isOpen }) => (
   <SMenu isOpen={isOpen}>
     <Box bg={theme.colors.black}>
-      <Row px={[20, 0]} py={100} className="menu-wrapper">
+      <Row px={20} py={100} className="menu-wrapper">
         {menu && (
           <Flex as="ul" flexDirection="column" px={0}>
             {menu.map(item => (

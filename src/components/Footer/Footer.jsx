@@ -16,7 +16,7 @@ import theme from '../../theme';
 
 const Footer = ({ menu, title }) => (
   <SFooter as="footer" noPadding>
-    <Box width={[1, 1, 11 / 12]} px={[20, 0]} pt={[60, 100]} pb={[50, 100]} bg={theme.colors.black}>
+    <Box width={[1, 1, 11 / 12]} px={20} pt={[60, 100]} pb={[50, 100]} bg={theme.colors.black}>
       <Row px={[20, 0]} pl={[0, 60]}>
         <Flex alignItems={['flex-start', 'flex-end']}>
           <Box width={3 / 12} className="show-for-small">

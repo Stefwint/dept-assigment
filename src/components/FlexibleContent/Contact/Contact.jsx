@@ -13,17 +13,17 @@ const Contact = ({ title, form }) => {
   };
 
   return (
-    <Row px={[0, 20, 0]} pr={[40, 0]}>
+    <Row px={[20, 20, 20]} pr={[40, 0]}>
       <Flex py={[40, 80]} flexWrap="wrap">
-        <Box width={[1, 3 / 12]} pl={[30, 0]} mb={[20, 0]}>
+        <Box width={[1, 1, 3 / 12]} mb={[20, 40, 0]}>
           <Text as="h2" fontSize={[30, 60]} fontWeight={400}>
             {title}
           </Text>
         </Box>
         {form && (
-          <Column width={[1, 7 / 12]} offset={1 / 12}>
+          <Box width={[1, 1, 7 / 12]} ml="10%">
             <Form {...form} onSubmit={onSubmit} />
-          </Column>
+          </Box>
         )}
       </Flex>
     </Row>
