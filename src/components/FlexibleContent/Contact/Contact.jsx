@@ -13,6 +13,7 @@ import { Box, Flex, Row, Text } from '../../styles';
 const Contact = ({ title, form }) => {
   const [success, setSuccess] = useState(false);
 
+  // Add success message on form submit
   const onSubmit = values => {
     post('form/', { values }).then(resp => setSuccess(resp?.message));
   };
@@ -26,7 +27,7 @@ const Contact = ({ title, form }) => {
           </Text>
         </Box>
         {form && (
-          <Box width={[1, 1, 7 / 12]} ml={[0, -20, "10%"]}>
+          <Box width={[1, 1, 7 / 12]} ml={[0, -20, '10%']}>
             {!success ? <Form {...form} onSubmit={onSubmit} /> : <Text as="p">{success}</Text>}
           </Box>
         )}
