@@ -11,7 +11,7 @@ const Quote = ({ item }) => {
   return (
     <Row px={[20, 20, 0]} mt={[20, 40]}>
       <Flex pt={[40, 80]} pb={[40, 60]} justifyContent="center" className="border">
-        <Box width={[1, 8 / 12]}>
+        <Box width={[1, 10 / 12, 8 / 12]}>
           {quote && (
             <Text as="blockquote" fontSize={[24, 36]}>
               {quote}
