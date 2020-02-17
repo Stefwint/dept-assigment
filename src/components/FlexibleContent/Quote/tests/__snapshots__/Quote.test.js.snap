@@ -8,10 +8,11 @@ exports[`testing Quote Renders correctly 1`] = `
     className="Flex__Box-ro60kk-0 Flex-ro60kk-2 ihhDQr border"
   >
     <div
-      className="Flex__Box-ro60kk-0 bMuyXK"
+      className="Flex__Box-ro60kk-0 gyKgXO"
       width={
         Array [
           1,
+          0.8333333333333334,
           0.6666666666666666,
         ]
       }
