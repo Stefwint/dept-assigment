@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Box, Text } from '../../styles';
+import { Box, Text, Row } from '../../styles';
 import { rem } from 'polished';
 import { media } from '../../../utils';
 import theme from '../../../theme';
@@ -23,8 +23,22 @@ const SMenu = styled(Box)`
   }
 
   .menu-wrapper {
+    position: relative;
+    top: ${rem(150)};
     height: 100%;
     overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: ${rem(20)};
+      background-color: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      height: ${rem(20)};
+      background-clip: padding-box;
+      border-radius: 10px;
+      background-color: transparent;
+    }
 
     &:after {
       content: '';
@@ -153,6 +167,78 @@ export const MenuItem = styled(Text)`
         }
       `}
     `}
+`;
+
+export const SCountries = styled(Row)`
+  position: relative;
+
+  > div {
+    position: absolute;
+    top: ${rem(100)};
+    left: ${rem(20)};
+    z-index: 1;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        padding-left: 0;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        a {
+          text-decoration: none;
+
+          &.active {
+            &:before {
+              content: '';
+              display: inline-block;
+              margin-right: ${rem(5)};
+              width: 0;
+              height: 0;
+              border-top: 4px solid transparent;
+              border-bottom: 4px solid transparent;
+              border-left: 8px solid ${theme.colors.white};
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const SSocials = styled(Row)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+
+  .socials-wrapper {
+    position: absolute;
+    left: 0;
+    height: 100%;
+
+    > div {
+      position: absolute;
+      bottom: ${rem(50)};
+      left: ${rem(20)};
+      z-index: 1;
+
+      a {
+        padding: ${rem(3)} 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+  }
 `;
 
 export default SMenu;

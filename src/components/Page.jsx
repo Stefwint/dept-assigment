@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 // Utils
-import { AppContext } from '../contexts/AppProvider';
+import { useApp } from '../contexts/AppProvider';
 
 // Components
 import Head from './head';
@@ -15,7 +15,7 @@ import theme from '../theme';
 
 const Page = ({ children }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const { menus } = useContext(AppContext);
+  const { menus } = useApp();
   const title = 'Dept | Reinvent Digital';
 
   return (

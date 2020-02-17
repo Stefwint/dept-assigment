@@ -17,6 +17,7 @@ const SHero = styled(Box)`
     > div {
       position: absolute;
       z-index: 1;
+      height: calc(100vh - 40px);
 
       h1 {
         text-transform: uppercase;
@@ -36,6 +37,12 @@ const SHero = styled(Box)`
     width: 100%;
     height: inherit;
     min-height: ${rem(350)};
+
+    .hero-wrapper {
+      > div {
+        height: auto;
+      }
+    }
 
     img {
       height: ${rem(320)};

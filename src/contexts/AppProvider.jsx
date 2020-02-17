@@ -7,12 +7,16 @@ const AppContext = React.createContext();
 class AppProvider extends Component {
   state = {
     menus: {},
+    countries: {},
   };
 
   static getDerivedStateFromProps(props) {
     const update = {};
     if (props.menus) {
       update.menus = props.menus;
+    }
+    if (props.countries) {
+      update.countries = props.countries;
     }
     return update;
   }
@@ -27,5 +31,11 @@ class AppProvider extends Component {
 /* Create Consumer */
 const AppConsumer = AppContext.Consumer;
 
+/* Context Hook */
+const useApp = () => {
+  const context = React.useContext(AppContext);
+  return context;
+};
+
 export default AppProvider;
-export { AppConsumer, AppContext };
+export { AppConsumer, AppContext, useApp };

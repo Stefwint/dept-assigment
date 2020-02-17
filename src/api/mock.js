@@ -1,6 +1,6 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { cases, clients, contact, menus } from './mockdata';
+import { cases, clients, contact, menus, countries } from './mockdata';
 
 export default function mock(useMock) {
   if (useMock) {
@@ -20,6 +20,9 @@ export default function mock(useMock) {
 
       .onGet('menus/')
       .reply(200, menus)
+
+      .onGet('countries/')
+      .reply(200, countries)
 
       // Let unmatched requests through
       .onAny()

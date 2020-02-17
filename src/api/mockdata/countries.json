@@ -1,0 +1,33 @@
+{
+  "countries": [
+    {
+      "title": "Global",
+      "slug": "global"
+    },
+    {
+      "title": "Nederland",
+      "slug": "nederland",
+      "isActive": true
+    },
+    {
+      "title": "United States",
+      "slug": "united-states"
+    },
+    {
+      "title": "Ireland",
+      "slug": "ireland"
+    },
+    {
+      "title": "United Kingdom",
+      "slug": "united-kingdom"
+    },
+    {
+      "title": "Deutschland",
+      "slug": "deutschland"
+    },
+    {
+      "title": "Schweiz",
+      "slug": "schweiz"
+    }
+  ]
+}

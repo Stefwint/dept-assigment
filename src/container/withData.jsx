@@ -6,9 +6,11 @@ const clientStore = isServer ? null : {};
 
 async function fetchGlobalData() {
   const menus = get('menus/').then(resp => resp?.menus);
+  const countries = get('countries/').then(resp => resp?.countries);
 
-  const result = Promise.all([menus]).then(values => ({
+  const result = Promise.all([menus, countries]).then(values => ({
     menus: values[0],
+    countries: values[1],
   }));
 
   return result;
