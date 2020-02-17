@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Tile Renders correctly 1`] = `
+<div
+  className="Flex__Box-ro60kk-0 styles__STile-sc-1rx2yf9-0 XMugF"
+>
+  <a
+    href="https://www.deptagency.com"
+    target="_blank"
+  >
+    <div
+      className="Flex__Box-ro60kk-0 kflYyU"
+    >
+      <img
+        src="../../../static/images/bolcom.png"
+      />
+    </div>
+    <span
+      className="Flex__Text-ro60kk-1 hqPSXo"
+      color="#939393"
+      fontSize={
+        Array [
+          14,
+          15,
+        ]
+      }
+      fontWeight={700}
+    >
+      bol.com
+    </span>
+    <h3
+      className="Flex__Text-ro60kk-1 irqMHd"
+      color="#0E0E0E"
+      fontSize={30}
+      fontWeight={400}
+    >
+      A summer island in the Netherlands
+    </h3>
+    <span
+      className="Button__ArrowButton-sc-1qg0mzm-1 iqQLXk"
+    >
+      View case
+    </span>
+  </a>
+</div>
+`;

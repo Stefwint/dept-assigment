@@ -3,14 +3,12 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import uuid from 'uuid';
 
-// Utils
-import ICONS from '../../public/static/icons';
-
 // Components
-import Icon from '../Icon';
+import Socials from './Socials';
+import ScrollTop from './ScrollTop';
 
 // Styling
-import { Box, Button, Column, Flex, Text, Row } from '../styles';
+import { Box, Column, Flex, Text, Row } from '../styles';
 import SFooter, { SFooterMenu } from './styles';
 import theme from '../../theme';
 
@@ -43,40 +41,15 @@ const Footer = ({ menu, title }) => (
               ))}
             </SFooterMenu>
           )}
-          <Flex flexDirection={['column', 'row']} ml="auto">
-            <Text as="a" href="https://www.facebook.com/DeptAgency/" target="_blank" mb={[20, 0]}>
-              <Icon
-                icon={ICONS.FACEBOOK}
-                viewbox="0 0 23 50"
-                size={15}
-                color={theme.colors.white}
-              />
-            </Text>
-            <Text
-              as="a"
-              ml={[0, 30]}
-              mb={[20, 0]}
-              href="https://twitter.com/deptagency"
-              target="_blank"
-            >
-              <Icon icon={ICONS.TWITTER} viewbox="0 0 50 50" size={15} color={theme.colors.white} />
-            </Text>
-            <Text as="a" ml={[0, 30]} href="https://www.instagram.com/deptagency/" target="_blank">
-              <Icon
-                icon={ICONS.INSTAGRAM}
-                viewbox="0 0 14 14"
-                size={15}
-                color={theme.colors.white}
-              />
-            </Text>
-          </Flex>
+          <Socials />
         </Flex>
         <hr />
         <Flex mt={[0, 30]} flexDirection={['column', 'row']}>
           <Column offset={[0, 3 / 12]}>
             <Flex flexDirection={['column', 'row']} flexWrap="wrap">
               <Text
-                px={[0, 15]}
+                pr={[0, 15]}
+                pl={[0, 0, 15]}
                 py={['3px', 0]}
                 width={[1, 'auto']}
                 fontSize={13}
@@ -108,31 +81,7 @@ const Footer = ({ menu, title }) => (
         </Flex>
       </Row>
     </Box>
-    <Flex width={1 / 12} alignItems="center" justifyContent="center" className="show-for-medium">
-      <Button
-        noStyle
-        onClick={() =>
-          window.scrollTo({
-            top: 100,
-            left: 100,
-            behavior: 'smooth',
-          })
-        }
-      >
-        <Flex flexDirection="column" alignItems="center">
-          <Icon icon={ICONS.TOP} viewbox="0 0 14 31" size={40} color={theme.colors.blue} />
-          <Text
-            as="span"
-            mt="5px"
-            fontSize={22}
-            fontFamily={theme.fonts.heading}
-            color={theme.colors.blue}
-          >
-            TOP
-          </Text>
-        </Flex>
-      </Button>
-    </Flex>
+    <ScrollTop />
   </SFooter>
 );
 
