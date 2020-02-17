@@ -25,7 +25,7 @@ const Hero = ({ title }) => (
         </Flex>
       </Flex>
     </Row>
-    <img src="../../../static/images/work-header.png" />
+    <img src="../../../static/images/work-header.png" alt={title} />
   </SHero>
 );
 

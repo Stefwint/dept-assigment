@@ -18,7 +18,7 @@ const Tile = ({ title, client, image, link, isSmall }) => {
       <a href={link} target="_blank">
         {image && !isSmall && (
           <Box mb={20}>
-            <img src={`../../../static/images/${image}`} />
+            <img src={`../../../static/images/${image}`} alt={title} />
           </Box>
         )}
         {client && (

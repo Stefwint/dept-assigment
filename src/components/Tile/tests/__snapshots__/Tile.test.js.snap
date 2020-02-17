@@ -12,6 +12,7 @@ exports[`testing Tile Renders correctly 1`] = `
       className="Flex__Box-ro60kk-0 kflYyU"
     >
       <img
+        alt="A summer island in the Netherlands"
         src="../../../static/images/bolcom.png"
       />
     </div>
