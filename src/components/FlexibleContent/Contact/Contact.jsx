@@ -26,7 +26,7 @@ const Contact = ({ title, form }) => {
           </Text>
         </Box>
         {form && (
-          <Box width={[1, 1, 7 / 12]} ml="10%">
+          <Box width={[1, 1, 7 / 12]} ml={[0, -20, "10%"]}>
             {!success ? <Form {...form} onSubmit={onSubmit} /> : <Text as="p">{success}</Text>}
           </Box>
         )}
