@@ -44,6 +44,7 @@
     "next-offline": "^4.0.5",
     "next-optimized-images": "^2.5.3",
     "nookies": "^2.0.8",
+    "polished": "^3.4.4",
     "prettier": "^1.19.0",
     "react": "^16.8.1",
     "react-dom": "^16.12.0",
